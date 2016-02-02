@@ -1,0 +1,516 @@
+2015-09-23 15:39:06 trace :
+------------
+Array:
+from : oKMr3sh2TnN97E4EqSoY8scrXR-g ;
+to : gh_3496a9c1c454 ;
+time : 1442993969 ;
+type : event ;
+event : subscribe ;
+tousername : gh_3496a9c1c454 ;
+fromusername : oKMr3sh2TnN97E4EqSoY8scrXR-g ;
+createtime : 1442993969 ;
+msgtype : event ;
+eventkey :  ;
+
+2015-09-23 15:39:06 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2015-09-23 15:39:06 response :
+------------
+
+2015-09-23 15:39:26 trace :
+------------
+Array:
+from : oKMr3sh2TnN97E4EqSoY8scrXR-g ;
+to : gh_3496a9c1c454 ;
+time : 1442993989 ;
+type : text ;
+event :  ;
+tousername : gh_3496a9c1c454 ;
+fromusername : oKMr3sh2TnN97E4EqSoY8scrXR-g ;
+createtime : 1442993989 ;
+msgtype : text ;
+content : 遵义天气 ;
+msgid : 6197611991310731265 ;
+redirection :  ;
+source :  ;
+
+2015-09-23 15:39:26 params :
+------------
+Array:
+message : Array ;
+module : userapi ;
+rule : 1 ;
+priority : 255 ;
+keyword : Array ;
+
+2015-09-23 15:39:26 response :
+------------
+Array:
+FromUserName : gh_3496a9c1c454 ;
+ToUserName : oKMr3sh2TnN97E4EqSoY8scrXR-g ;
+MsgType : text ;
+Content : 遵义今日天气
+今天白天多云，26摄氏度。
+南风，≤3
+今天夜间阴，20摄氏度。
+东北风，≤3
+==================
+【穿衣指数】：短袖衫、短裙、短裤、短套装、短袖T恤
+
+【感冒指数】：低发期天气舒适，不易发生感冒；
+
+【空调指数】：不需要开启空调
+
+【污染物扩散条件】：轻度对空气污染物扩散无明显影响
+
+【洗车指数】：不适宜洗车后当日有降水、大风或沙尘天气，不适宜洗车
+
+【运动指数】：适宜天气较暖，比较适宜户外运动；
+
+【紫外线指数】：弱紫外线弱
+
+【体感度指数】：凉爽舒适天气状况良好时，多到户外活动，并可适当增加户外活动时间。
+ ;
+
+2015-09-23 15:39:57 trace :
+------------
+Array:
+from : oKMr3sh2TnN97E4EqSoY8scrXR-g ;
+to : gh_3496a9c1c454 ;
+time : 1442994021 ;
+type : location ;
+event :  ;
+tousername : gh_3496a9c1c454 ;
+fromusername : oKMr3sh2TnN97E4EqSoY8scrXR-g ;
+createtime : 1442994021 ;
+msgtype : location ;
+location_x : 27.597544 ;
+location_y : 106.897705 ;
+scale : 16 ;
+label : 遵义县龙坑镇花院墙(近和平大道) ;
+msgid : 6197612128749684805 ;
+
+2015-09-23 15:39:57 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2015-09-23 15:39:57 response :
+------------
+
+2015-09-23 15:47:59 trace :
+------------
+Array:
+from : omzW8vhkvWFepWHSFG5lThCfnBKU ;
+to : gh_b799bda932df ;
+time : 1442994503 ;
+type : event ;
+event : subscribe ;
+tousername : gh_b799bda932df ;
+fromusername : omzW8vhkvWFepWHSFG5lThCfnBKU ;
+createtime : 1442994503 ;
+msgtype : event ;
+eventkey :  ;
+
+2015-09-23 15:47:59 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2015-09-23 15:47:59 response :
+------------
+
+2015-09-23 15:48:07 trace :
+------------
+Array:
+from : omzW8vhkvWFepWHSFG5lThCfnBKU ;
+to : gh_b799bda932df ;
+time : 1442994510 ;
+type : trace ;
+event : LOCATION ;
+tousername : gh_b799bda932df ;
+fromusername : omzW8vhkvWFepWHSFG5lThCfnBKU ;
+createtime : 1442994510 ;
+msgtype : event ;
+latitude : 27.600971 ;
+longitude : 106.893906 ;
+precision : 40.000000 ;
+location_x : 27.600971 ;
+location_y : 106.893906 ;
+
+2015-09-23 15:48:07 params :
+------------
+Array:
+message : Array ;
+module : default ;
+rule : -1 ;
+
+2015-09-23 15:48:07 response :
+------------
+Array:
+errno : -1 ;
+message : Invaild value ;
+
+2015-09-23 15:48:13 trace :
+------------
+Array:
+from : omzW8vhkvWFepWHSFG5lThCfnBKU ;
+to : gh_b799bda932df ;
+time : 1442994516 ;
+type : event ;
+event : VIEW ;
+tousername : gh_b799bda932df ;
+fromusername : omzW8vhkvWFepWHSFG5lThCfnBKU ;
+createtime : 1442994516 ;
+msgtype : event ;
+eventkey : http://weengine.guanhuadanbao.com/app/index.php?i=1&c=home&t=2 ;
+
+2015-09-23 15:48:13 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2015-09-23 15:48:13 response :
+------------
+
+2015-09-23 15:48:53 trace :
+------------
+Array:
+from : omzW8vhkvWFepWHSFG5lThCfnBKU ;
+to : gh_b799bda932df ;
+time : 1442994557 ;
+type : trace ;
+event : LOCATION ;
+tousername : gh_b799bda932df ;
+fromusername : omzW8vhkvWFepWHSFG5lThCfnBKU ;
+createtime : 1442994557 ;
+msgtype : event ;
+latitude : 27.600971 ;
+longitude : 106.893906 ;
+precision : 40.000000 ;
+location_x : 27.600971 ;
+location_y : 106.893906 ;
+
+2015-09-23 15:48:53 params :
+------------
+Array:
+message : Array ;
+module : default ;
+rule : -1 ;
+
+2015-09-23 15:48:53 response :
+------------
+Array:
+errno : -1 ;
+message : Invaild value ;
+
+2015-09-23 15:49:05 trace :
+------------
+Array:
+from : omzW8vhkvWFepWHSFG5lThCfnBKU ;
+to : gh_b799bda932df ;
+time : 1442994569 ;
+type : trace ;
+event : LOCATION ;
+tousername : gh_b799bda932df ;
+fromusername : omzW8vhkvWFepWHSFG5lThCfnBKU ;
+createtime : 1442994569 ;
+msgtype : event ;
+latitude : 27.600985 ;
+longitude : 106.893890 ;
+precision : 40.000000 ;
+location_x : 27.600985 ;
+location_y : 106.893890 ;
+
+2015-09-23 15:49:05 params :
+------------
+Array:
+message : Array ;
+module : default ;
+rule : -1 ;
+
+2015-09-23 15:49:05 response :
+------------
+Array:
+errno : -1 ;
+message : Invaild value ;
+
+2015-09-23 15:49:10 trace :
+------------
+Array:
+from : omzW8vhkvWFepWHSFG5lThCfnBKU ;
+to : gh_b799bda932df ;
+time : 1442994574 ;
+type : trace ;
+event : LOCATION ;
+tousername : gh_b799bda932df ;
+fromusername : omzW8vhkvWFepWHSFG5lThCfnBKU ;
+createtime : 1442994574 ;
+msgtype : event ;
+latitude : 27.600985 ;
+longitude : 106.893890 ;
+precision : 40.000000 ;
+location_x : 27.600985 ;
+location_y : 106.893890 ;
+
+2015-09-23 15:49:10 params :
+------------
+Array:
+message : Array ;
+module : default ;
+rule : -1 ;
+
+2015-09-23 15:49:10 response :
+------------
+Array:
+errno : -1 ;
+message : Invaild value ;
+
+2015-09-23 15:49:12 trace :
+------------
+Array:
+from : omzW8vhkvWFepWHSFG5lThCfnBKU ;
+to : gh_b799bda932df ;
+time : 1442994575 ;
+type : event ;
+event : VIEW ;
+tousername : gh_b799bda932df ;
+fromusername : omzW8vhkvWFepWHSFG5lThCfnBKU ;
+createtime : 1442994575 ;
+msgtype : event ;
+eventkey : http://weengine.guanhuadanbao.com/app/index.php?i=1&c=home&t=2 ;
+
+2015-09-23 15:49:12 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2015-09-23 15:49:12 response :
+------------
+
+2015-09-23 15:51:34 trace :
+------------
+Array:
+from : omzW8vgMXH6hydxhwR-rhI_Q1-Jo ;
+to : gh_b799bda932df ;
+time : 1442994717 ;
+type : event ;
+event : subscribe ;
+tousername : gh_b799bda932df ;
+fromusername : omzW8vgMXH6hydxhwR-rhI_Q1-Jo ;
+createtime : 1442994717 ;
+msgtype : event ;
+eventkey :  ;
+
+2015-09-23 15:51:34 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2015-09-23 15:51:34 response :
+------------
+
+2015-09-23 15:51:41 trace :
+------------
+Array:
+from : omzW8vgMXH6hydxhwR-rhI_Q1-Jo ;
+to : gh_b799bda932df ;
+time : 1442994724 ;
+type : event ;
+event : VIEW ;
+tousername : gh_b799bda932df ;
+fromusername : omzW8vgMXH6hydxhwR-rhI_Q1-Jo ;
+createtime : 1442994724 ;
+msgtype : event ;
+eventkey : http://weengine.guanhuadanbao.com/app/index.php?i=1&c=home& ;
+
+2015-09-23 15:51:41 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2015-09-23 15:51:41 response :
+------------
+
+2015-09-23 15:55:16 trace :
+------------
+Array:
+from : omzW8vgMXH6hydxhwR-rhI_Q1-Jo ;
+to : gh_b799bda932df ;
+time : 1442994939 ;
+type : event ;
+event : subscribe ;
+tousername : gh_b799bda932df ;
+fromusername : omzW8vgMXH6hydxhwR-rhI_Q1-Jo ;
+createtime : 1442994939 ;
+msgtype : event ;
+eventkey :  ;
+
+2015-09-23 15:55:16 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2015-09-23 15:55:16 response :
+------------
+
+2015-09-23 15:55:20 trace :
+------------
+Array:
+from : omzW8vgMXH6hydxhwR-rhI_Q1-Jo ;
+to : gh_b799bda932df ;
+time : 1442994944 ;
+type : trace ;
+event : LOCATION ;
+tousername : gh_b799bda932df ;
+fromusername : omzW8vgMXH6hydxhwR-rhI_Q1-Jo ;
+createtime : 1442994944 ;
+msgtype : event ;
+latitude : 27.600975 ;
+longitude : 106.893906 ;
+precision : 40.000000 ;
+location_x : 27.600975 ;
+location_y : 106.893906 ;
+
+2015-09-23 15:55:20 params :
+------------
+Array:
+message : Array ;
+module : default ;
+rule : -1 ;
+
+2015-09-23 15:55:20 response :
+------------
+Array:
+errno : -1 ;
+message : Invaild value ;
+
+2015-09-23 15:55:34 trace :
+------------
+Array:
+from : omzW8vgMXH6hydxhwR-rhI_Q1-Jo ;
+to : gh_b799bda932df ;
+time : 1442994958 ;
+type : text ;
+event :  ;
+tousername : gh_b799bda932df ;
+fromusername : omzW8vgMXH6hydxhwR-rhI_Q1-Jo ;
+createtime : 1442994958 ;
+msgtype : text ;
+content : 遵义天气 ;
+msgid : 6197616153131532995 ;
+redirection :  ;
+source :  ;
+
+2015-09-23 15:55:34 params :
+------------
+Array:
+message : Array ;
+module : userapi ;
+rule : 1 ;
+priority : 255 ;
+keyword : Array ;
+
+2015-09-23 15:55:34 response :
+------------
+Array:
+FromUserName : gh_b799bda932df ;
+ToUserName : omzW8vgMXH6hydxhwR-rhI_Q1-Jo ;
+MsgType : text ;
+Content : 遵义今日天气
+今天白天多云，26摄氏度。
+南风，≤3
+今天夜间阴，20摄氏度。
+东北风，≤3
+==================
+【穿衣指数】：短袖衫、短裙、短裤、短套装、短袖T恤
+
+【感冒指数】：低发期天气舒适，不易发生感冒；
+
+【空调指数】：不需要开启空调
+
+【污染物扩散条件】：轻度对空气污染物扩散无明显影响
+
+【洗车指数】：不适宜洗车后当日有降水、大风或沙尘天气，不适宜洗车
+
+【运动指数】：适宜天气较暖，比较适宜户外运动；
+
+【紫外线指数】：弱紫外线弱
+
+【体感度指数】：凉爽舒适天气状况良好时，多到户外活动，并可适当增加户外活动时间。
+ ;
+
+2015-09-23 15:58:09 trace :
+------------
+Array:
+from : omzW8vgMXH6hydxhwR-rhI_Q1-Jo ;
+to : gh_b799bda932df ;
+time : 1442995112 ;
+type : text ;
+event :  ;
+tousername : gh_b799bda932df ;
+fromusername : omzW8vgMXH6hydxhwR-rhI_Q1-Jo ;
+createtime : 1442995112 ;
+msgtype : text ;
+content : 遵义天气 ;
+msgid : 6197616814556497541 ;
+redirection :  ;
+source :  ;
+
+2015-09-23 15:58:09 params :
+------------
+Array:
+message : Array ;
+module : userapi ;
+rule : 1 ;
+priority : 255 ;
+keyword : Array ;
+
+2015-09-23 15:58:09 response :
+------------
+Array:
+FromUserName : gh_b799bda932df ;
+ToUserName : omzW8vgMXH6hydxhwR-rhI_Q1-Jo ;
+MsgType : text ;
+Content : 遵义今日天气
+今天白天多云，26摄氏度。
+南风，≤3
+今天夜间阴，20摄氏度。
+东北风，≤3
+==================
+【穿衣指数】：短袖衫、短裙、短裤、短套装、短袖T恤
+
+【感冒指数】：低发期天气舒适，不易发生感冒；
+
+【空调指数】：不需要开启空调
+
+【污染物扩散条件】：轻度对空气污染物扩散无明显影响
+
+【洗车指数】：不适宜洗车后当日有降水、大风或沙尘天气，不适宜洗车
+
+【运动指数】：适宜天气较暖，比较适宜户外运动；
+
+【紫外线指数】：弱紫外线弱
+
+【体感度指数】：凉爽舒适天气状况良好时，多到户外活动，并可适当增加户外活动时间。
+ ;
+

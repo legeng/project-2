@@ -1,0 +1,55 @@
+2015-11-27 21:08:06 trace :
+------------
+Array:
+from : oKMr3sh2TnN97E4EqSoY8scrXR-g ;
+to : gh_3496a9c1c454 ;
+time : 1448629740 ;
+type : text ;
+event :  ;
+tousername : gh_3496a9c1c454 ;
+fromusername : oKMr3sh2TnN97E4EqSoY8scrXR-g ;
+createtime : 1448629740 ;
+msgtype : text ;
+content : 遵义天气 ;
+msgid : 6221817357717168285 ;
+redirection :  ;
+source :  ;
+
+2015-11-27 21:08:06 params :
+------------
+Array:
+message : Array ;
+module : userapi ;
+rule : 1 ;
+priority : 255 ;
+keyword : Array ;
+
+2015-11-27 21:08:06 response :
+------------
+Array:
+FromUserName : gh_3496a9c1c454 ;
+ToUserName : oKMr3sh2TnN97E4EqSoY8scrXR-g ;
+MsgType : text ;
+Content : 遵义今日天气
+今天白天阴，10摄氏度。
+东北风，≤3
+今天夜间阵雨，6摄氏度。
+东南风，≤3
+==================
+【穿衣指数】：风衣、大衣、夹大衣、外套、毛衣、毛套装、西服套装、薄棉外套
+
+【感冒指数】：易发期天气很凉，季节转换的气候，慎重增加衣服；较易引起感冒；
+
+【空调指数】：建议开启空调
+
+【污染物扩散条件】：轻度对空气污染物扩散无明显影响
+
+【洗车指数】：不太适宜洗车后未来1-2天内有降水、大风或沙尘天气，不太适宜洗车
+
+【运动指数】：不适宜天气阴冷，不适宜户外运动；
+
+【紫外线指数】：最弱紫外线最弱
+
+【体感度指数】：较凉老年、幼儿、体弱者外出需要带上薄围巾、薄手套。
+ ;
+

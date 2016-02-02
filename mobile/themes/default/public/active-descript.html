@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta charset="gbk">
+        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+        <meta content="2345小说大全" name="apple-mobile-web-app-title">
+        <title>微信公众号-{$account['name']}-活动详情-微信生意通手机版</title>
+        <link rel="stylesheet" href="./resource/css/index.css">
+    </head>
+
+    <body id="xtopjsinfo">
+
+        <!--wrapper begin-->
+        <div class="wrapper">
+            <!-- header begin -->
+            {template 'comm/header'}
+            <div class="container page_rank">
+
+                <section class="mod_tab">
+                <div class="tabCon">
+                    <div class="titpics">
+                        <p class="titin">{$account['title']}</p>
+                    </div>
+
+                    <div class="zwword">{$account['content']}</div>
+
+                </div>
+                {if $active}
+                <div class="mod_book book_contents">
+                    <div class="hd">
+                        <h3 class="tit">最新活动阅读</h3>
+                    </div>
+                    <ul class="book_textListf">
+                        {loop $active $one}
+                        <li> <a href="{php echo url('public/active' ,array('id'=>$one['uniacid']))}" title="{$one['title']}" target="_blank">{$one['title']}</a></li>
+                        {/loop}
+                    </ul>
+                </div>
+                {/if}
+                <div class="guanzu">
+                    <a class="fired" href="{php echo url('public/category' ,array('id'=>$account['uniacid']))}" title="{$account['name']}">
+                        <img width="60" height="60" class="imgthumb" src="{$_W['attachurl']}{$account['uniacid']}/headimg_{$account['uniacid']}.jpg?acid={$account['uniacid']}" alt="{$account['name']}">
+                        <h3 class="ui-li-heading">{$account['name']}</h3>
+                        <p class="ui-li-desc">{$account['scan_count']}人关注</p>
+                    </a>
+
+                    <span><a target="_blank" href="{php echo url('public/category' ,array('id'=>$account['uniacid']))}" title="{$account['name']}">+&nbsp;关注</a></span>
+
+                </div></section>
+
+
+
+            </div>
+
+            <div class="push"></div>
+        </div>
+
+        <div id="SOHUCS"></div>
+        <script id="changyan_mobile_js" charset="utf-8" type="text/javascript" 
+                src="http://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=cyrYE76zo&conf=prod_5226d00eacabaa296def1945d14ef09b">
+        </script>
+        {template 'comm/footer'}
+    </body>
+</html>

@@ -1,0 +1,11 @@
+RewriteEngine on
+rewritebase /
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^http://(www\.)?weixinsyt\.com/ [NC]
+RewriteCond %{HTTP_REFERER} !^http://weixinsyt\.com/ [NC]
+RewriteRule \.(gif|jpg|png)$ – [F]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule .? /html/index\.php [L]
+

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta charset="gbk">
+        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+        <meta content="微信公众号排行榜" name="apple-mobile-web-app-title">
+        <title>微信公众号排行榜-微信生意通手机端</title>
+        <link rel="stylesheet" href="./resource/css/index.css">
+    </head>
+    <body id="xtopjsinfo">
+        <!--wrapper begin-->
+        <div class="wrapper">
+            <!-- header begin -->
+            {template 'comm/header'}
+            <!--nav end-->
+            <!--container begin-->
+            <div class="container page_rank">
+                <section class="mod_tab tab3">
+                <div class="tabNav">
+                    <li class="cur">最新收录榜</li>
+                    <li>关注排行榜</li>
+                    <li>综合排行榜</li>
+                </div>
+                <div class="tabCon">
+                    <div>
+                        <ul class="book_textList rank_list">
+                            {loop $account1 $one} 
+                            <li> <a href="{php echo url('public/category' ,array('id'=>$one['uniacid']))}" title="{$one['name']}" class="fired">
+                                <img src="{$_W['attachurl']}{$one['uniacid']}/headimg_{$one[uniacid]}.jpg?acid={$one[uniacid]}" alt="{$one['name']}" class="imgthumb" width="60" height="60"/>
+                                <h3 class="ui-li-heading">{$one['name']}</h3>
+                                <p class="ui-li-desc">{$one['industry_parent']}&nbsp;&nbsp;{$one['scan_count']}人关注</p>
+                            </a>
+                            <span><a href="{php echo url('public/category' ,array('id'=>$one['uniacid']))}" target="_blank">+&nbsp;关注</a></span>
+                            </li>
+                            {/loop}
+                        </ul>
+                    </div>
+
+                    <div class="hide">
+                        <ul class="book_textList rank_list">
+                            {loop $account2 $one} 
+                            <li> <a href="{php echo url('public/category' ,array('id'=>$one['uniacid']))}" title="{$one['name']}" class="fired">
+                                <img src="{$_W['attachurl']}{$one['uniacid']}/headimg_{$one[uniacid]}.jpg?acid={$one[uniacid]}" alt="{$one['name']}" class="imgthumb" width="60" height="60"/>
+                                <h3 class="ui-li-heading">{$one['name']}</h3>
+                                <p class="ui-li-desc">{$one['industry_parent']}&nbsp;&nbsp;{$one['scan_count']}人关注</p>
+                            </a>
+                            <span><a href="{php echo url('public/category' ,array('id'=>$one['uniacid']))}" target="_blank">+&nbsp;关注</a></span>
+                            </li>
+                            {/loop}
+                        </ul>
+                    </div>
+
+                    <div class="hide">
+                        <ul class="book_textList rank_list">
+                            {loop $account3 $one} 
+                            <li> <a href="{php echo url('public/category' ,array('id'=>$one['uniacid']))}" title="{$one['name']}" class="fired">
+                                <img src="{$_W['attachurl']}{$one['uniacid']}/headimg_{$one[uniacid]}.jpg?acid={$one[uniacid]}" alt="{$one['name']}" class="imgthumb" width="60" height="60"/>
+                                <h3 class="ui-li-heading">{$one['name']}</h3>
+                                <p class="ui-li-desc">{$one['industry_parent']}&nbsp;&nbsp;{$one['scan_count']}人关注</p>
+                            </a>
+                            <span><a href="{php echo url('public/category' ,array('id'=>$one['uniacid']))}" target="_blank">+&nbsp;关注</a></span>
+                            </li>
+                            {/loop}
+                        </ul>
+                    </div>
+                </div>
+                </section>
+            </div>
+            <div class="push"></div>
+        </div>
+
+        {template 'comm/footer'}
+        <script src="./resource/js/lib/jquery-1.11.1.min.js" type="text/javascript"></script>
+        <script src="./resource/js/jquery.tabs.js"></script>
+        <script>
+            $(function(){
+
+            $('.tab3').Tabs({
+                event:'click',
+                switchBtn : true
+            });
+
+
+        });	
+    </script>
+</body>
+            </html>

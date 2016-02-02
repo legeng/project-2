@@ -1,0 +1,42 @@
+﻿<div class="iasim">
+    <div class="iirig">
+        <h5>精品公众号推送</h5>
+        <div class="content">
+            <div class="iirig-class">
+                <ul>
+                    {loop get_account(1) $one}
+                    <li><a href="{php echo url('public/category',array('id'=>$one['uniacid'],'key'=>$one['industry_parent']))}" target="_blank" title="{$one['name']}"><img src="{$_W['attachurl']}{$one['uniacid']}/headimg_{$one[uniacid]}.jpg?acid={$one[uniacid]}" alt="{$one['name']}" title="{$one['name']}"/><p>{$one['name']}</p></a></li>
+                    {/loop}
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="iirig">
+        <h5>公众号扫描排行</h5>
+        <div class="content">
+            <div class="iwohh-class">
+                <ul>
+                    {loop get_account(2) $one}
+                    <li><span class="ol"><a href="{php echo url('public/category',array('id'=>$one['uniacid'],'key'=>$one['industry_parent']))}" target="_blank" title="{$one['name']}"><img src="{$_W['attachurl']}{$one['uniacid']}/headimg_{$one[uniacid]}.jpg?acid={$one[uniacid]}" width="90" height="90" alt="{$one['name']}" title="{$one['name']}" /></a></span><span class="or"><strong><a href=" {php echo url('public/category',array('id'=>$one['uniacid'],'key'=>$one['industry_parent']))}" target="_blank" title="{$one['name']}">{$one['name']}</a></strong><p class="uz1">微信号：{$one['details'][$one['uniacid']]['account']}</p></span></li>
+                    {/loop}
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="iirig">
+        <h5>网络热门文章</h5>
+        <dl class="channel">
+            <dd><a href="{php echo url('public/article/more')}" target="_blank" title="更多文章">更多</a></dd>
+        </dl>
+        <div class="content">
+            <div class="inew-class">
+                <ul>
+                {loop get_article() $one}
+                <li><a href="{php echo url('public/article',array('id'=>$one['id']));}" target="_blank" title="{$one['title']}">{$one['title']}</a></li>
+                {/loop}
+                <li><a href="{php echo url('public/article/more')}" target="_blank" title="更多精彩文章推荐">更多精彩文章推荐>></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

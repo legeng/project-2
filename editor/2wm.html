@@ -1,0 +1,183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <TITLE>微信生意通二维码在线生成工具—二维码图片生成器—微信生意通二维码</TITLE>
+    <META content="text/html; charset=utf-8" http-equiv=Content-Type>
+    <META name=description content=微信生意通在线二维码生成器提供免费的在线二维码生成服务，可以把电子名片、文本、wifi网络、电子邮件、短信、电话号码、网址等信息生成对应的二维码图片。二维码手机扫描软件下载。>
+    <META name=keywords content=微信生意通二维码,二维码生成器,二维码图片,二维码是什么,手机二维码,二维码生成,二维码扫描软件,二维码识别软件,手机二维码识别软件,二维码解码器,二维码软件,手机二维码软件>
+    <LINK rel=stylesheet type=text/css href="images/index.css">
+    <LINK rel=stylesheet type=text/css href="css/style.css">
+    <SCRIPT type=text/javascript src="images/jquery-1.8.2.min.js"></SCRIPT>
+    <SCRIPT type=text/javascript src="images/iColorPicker.js"></SCRIPT>
+    <SCRIPT type=text/javascript src="images/ZeroClipboard.js"></SCRIPT>
+    <META name=GENERATOR content="MSHTML 8.00.6001.19393">
+</head>
+<body style="padding:0;margin:0;background:#ddd;font-size:14px">
+        <div id="top">
+            <div class="topwrap">
+                <div class="tel" style="margin-left:0px;"><h1><a href="" class="adbox">微信生意通-二维码在线生成工具</a></h1>
+                    <span>用户最喜欢的二维码生成平台！</span></div>
+                <div class="tag" style="float:right;width:650px;"><a href="http://www.weixinsyt.com" >微信生意通 </a>&nbsp;|&nbsp; <a href="index.html" >微信在线编辑器 </a>&nbsp;|&nbsp; <a href="">二维码在线生成工具</a>&nbsp;|&nbsp; <a href="meitu.html" target="__blank">微信美图秀秀</a>&nbsp;|&nbsp; <a href="gif.html" target="__blank">微信动画制作</a>&nbsp;|&nbsp; <a href="video.flv">编辑器视频教程</a></div>
+            </div>
+        </div>
+    <div id="main" style="width:960px;background:#fff; border:1px solid #eee;margin:20px auto;padding:20px 40px;">
+	<div style="height:18px; line-height:18px; width:888px; margin:10px 30px;">
+<script>
+var marqueeContent=new Array();   //滚动新闻
+marqueeContent[0]='<font color="#ff0000">微信生意通温馨提示： </font><a href="http://www.weixinsyt.com" target=_blank>二维码又称二维条码，是在一维条码的基础上扩展出的一种具有可读性的条码。</a><br>';
+marqueeContent[1]='<font color="#ff0000">微信生意通温馨提示： </font><a href="http://www.weixinsyt.com" target=_blank>设备通过扫描二维码，识别条码的二进制数据并可获取其中所包含的信息。</a><br>';
+marqueeContent[2]='<font color="#ff0000">微信生意通温馨提示： </font><a href="http://www.weixinsyt.com" target=_blank>手机二维码可以印刷在报纸、杂志、图书及个人名片等多种载体上，用户通过手机摄像头扫描二维码</a><br>';
+marqueeContent[3]='<font color="#ff0000">微信生意通温馨提示： </font><a href="http://www.weixinsyt.com" target=_blank>手机二维码扫描软件：比较知名的应用有条码扫描器、快拍、酷拍、我查查等。彩色二维码生成器,二维码生成器。</a><br>';
+var marqueeInterval=new Array();  //定义一些常用而且要经常用到的变量
+var marqueeId=0;
+var marqueeDelay=5000;
+var marqueeHeight=18;
+//接下来的是定义一些要使用到的函数
+function initMarquee() {
+    var str=marqueeContent[0];
+    document.write('<div id=marqueeBox style="overflow:hidden;height:'+marqueeHeight+'px" onmouseover="clearInterval(marqueeInterval[0])" onmouseout="marqueeInterval[0]=setInterval(\'startMarquee()\',marqueeDelay)"><div>'+str+'</div></div>');
+    marqueeId++;
+    marqueeInterval[0]=setInterval("startMarquee()",marqueeDelay);
+    }
+function startMarquee() {
+    var str=marqueeContent[marqueeId];
+        marqueeId++;
+    if(marqueeId>=marqueeContent.length) marqueeId=0;
+    if(marqueeBox.childNodes.length==1) {
+        var nextLine=document.createElement('DIV');
+        nextLine.innerHTML=str;
+        marqueeBox.appendChild(nextLine);
+        }
+    else {
+        marqueeBox.childNodes[0].innerHTML=str;
+        marqueeBox.appendChild(marqueeBox.childNodes[0]);
+        marqueeBox.scrollTop=0;
+        }
+    clearInterval(marqueeInterval[1]);
+    marqueeInterval[1]=setInterval("scrollMarquee()",18);
+    }
+function scrollMarquee() {
+    marqueeBox.scrollTop++;
+    if(marqueeBox.scrollTop%marqueeHeight==(marqueeHeight-1)){
+        clearInterval(marqueeInterval[1]);
+        }
+    }
+initMarquee();
+</script>
+</div>
+
+<DIV class=main>
+    <DIV class=ibox>
+        <DIV class=il>
+            <DIV class=inav>
+                <UL id=datatype class=class>
+                    <LI class=hover><SPAN class=s1><A href="javascript:"  name=nav_text>通用文本</A></SPAN> 
+                    <LI><SPAN class=s2><A href="javascript:" name=nav_telephone>电话号码</A></SPAN> 
+                    <LI><SPAN class=s3><A href="javascript:" name=nav_sms>短信</A></SPAN> 
+                    <LI><SPAN class=s4><A href="javascript:" name=nav_card>电子名片</A></SPAN> 
+                    <LI><SPAN class=s5><A href="javascript:" name=nav_mail>电子邮件</A></SPAN> 
+                    <LI><SPAN class=s6><A href="javascript:" name=nav_url>网址</A></SPAN> 
+                    <LI><SPAN class=s7><A href="javascript:" name=nav_wifi>WiFi网络</A></SPAN> 
+                    </LI></UL>
+                </DIV>
+                <DIV class=middle>
+                    <FORM id=qrcodeform action=#>
+                        <DIV id=text class=imbox>
+                            <DIV class=imtit>推荐150字以内，支持普通文本/网址/EMAIL地址</DIV>
+                            <DIV class=imtext><TEXTAREA id=text_text rows=5 cols=30></TEXTAREA></DIV></DIV>
+                        <DIV id=telephone class=imbox>
+                            <DIV class=imtit>请输入你的电话号码</DIV>
+                            <DIV class=imtext>
+                                <DIV class=input><INPUT id=telephone_tel class=sms></DIV></DIV></DIV>
+                        <DIV id=sms class=imbox>
+                            <DIV class=imtit>短信生成二维码，短信内容推荐140个字以内</DIV>
+                            <DIV class=imtext>
+                                <DIV class=subtit>电话号码</DIV>
+                                <DIV class=input><INPUT id=sms_tel class=sms></DIV>
+                                <DIV class=subtit>短信内容</DIV><TEXTAREA id=sms_sms rows=5 cols=30></TEXTAREA> 
+                                <DIV class=size><SPAN id=sms_size>0</SPAN>/140</DIV></DIV></DIV>
+                        <DIV id=card class=imbox>
+                            <DIV class=imtit>电话和姓名为必填项</DIV>
+                            <DIV class=imtext>
+                                <DIV class=subtit><SPAN>*</SPAN>姓名</DIV>
+                                <DIV class=input><INPUT id=card_n class=sms></DIV>
+                                <DIV class=subtit><SPAN>*</SPAN>电话</DIV>
+                                <DIV class=input><INPUT id=card_tel class=sms></DIV>
+                                <DIV class=subtit>公司/单位</DIV>
+                                <DIV class=input><INPUT id=card_org class=sms></DIV>
+                                <DIV class=subtit>职位</DIV>
+                                <DIV class=input><INPUT id=card_til class=sms></DIV>
+                                <DIV class=subtit>网址</DIV>
+                                <DIV class=input><INPUT id=card_url class=sms></DIV>
+                                <DIV class=subtit>电子邮箱</DIV>
+                                <DIV class=input><INPUT id=card_mail class=sms></DIV>
+                                <DIV class=subtit>地址</DIV>
+                                <DIV class=input><INPUT id=card_adr class=sms></DIV><!-- <div class="subtit">备注</div>
+                                <textarea rows="3" cols="20"></textarea>--></DIV></DIV>
+                        <DIV id=mail class=imbox>
+                            <DIV class=imtit>电子邮件生成二维码</DIV>
+                            <DIV class=imtext>
+                                <DIV class=input><INPUT id=mail_mail class=sms></DIV></DIV></DIV>
+                        <DIV id=url class=imbox>
+                            <DIV class=imtit>网址请以http://或https://开头</DIV>
+                            <DIV class=imtext>
+                                <DIV class=input><INPUT id=url_url class=sms></DIV></DIV></DIV>
+                        <DIV id=wifi class=imbox>
+                            <DIV class=imtit>适用于安卓系统</DIV>
+                            <DIV class=imtext>
+                                <DIV class=subtit>SSID/无线账号</DIV>
+                                <DIV class=input><INPUT id=wifi_ssid class=sms></DIV>
+                                <DIV class=subtit>密码</DIV>
+                                <DIV class=input><INPUT id=wifi_p class=sms></DIV>
+                                <DIV class=subtit>密码类型</DIV>
+                                <DIV class=input><SELECT id=wifi_t class=select> <OPTION selected 
+                                        value=WPA/WPA2>WPA/WPA2</OPTION> <OPTION value=WEP>WEP</OPTION> 
+                                        <OPTION>无加密</OPTION></SELECT> </DIV></DIV></DIV>
+                        <DIV class=selectcolor>背景颜色 <INPUT id=bg class=iColorPicker onClick="iColorShow('bg','icp_bg')" value=#ffffff maxLength=7 name=mycolor> 图片颜色 
+                            <INPUT id=fg class=iColorPicker onClick="iColorShow('fg','icp_fg')" value=#000000 maxLength=7 name=mycolor> </DIV>
+                        <DIV class=generate><INPUT class=submit type=submit value=""></DIV>
+                    </FORM>
+
+                    <SCRIPT type=text/javascript>
+                        (function($){
+                         $('#telephone,#sms,#card,#mail,#url,#wifi').hide();
+                         })(jQuery)
+                     </SCRIPT>
+                 </DIV>
+             </DIV>
+             <DIV class=ir>
+                 <DIV class=irtit>您可以用手机扫描这张二维码图片 </DIV>
+                 <TABLE class=table>
+                     <TBODY>
+                         <TR>
+                             <TD vAlign=center align=middle>
+                                 <DIV id=bigcode class=bigcode><A href="http://weixinsyt.com" target=_blank title="微信生意通"><IMG id=qrcodeimg src="http://weixinsyt.com/html/resource/images/api.png"></A> </DIV>
+                             </TD>
+                         </TR>
+                     </TBODY>
+                 </TABLE>
+
+                 <DIV class=save>
+
+                 </DIV>
+             </DIV>
+         </DIV>
+         <div style=" text-align:left; line-height:210%; font-size:14px;">
+             &nbsp;&nbsp;&nbsp;&nbsp;<strong>二维码</strong>又称二维条码，是在一维条码的基础上扩展出的一种具有可读性的条码。<br>
+             &nbsp;&nbsp;&nbsp;&nbsp;设备通过扫描二维码，识别条码的二进制数据并可获取其中所包含的信息。<br>
+             &nbsp;&nbsp;&nbsp;&nbsp;手机二维码可以印刷在报纸、杂志、图书及个人名片等多种载体上，用户通过手机摄像头扫描二维码，即可实现快速手机上网，下载图文、音乐、视频、参与抽奖、了解企业产品信息等，还可以方便地用手机识别和存储名片、自动输入短信、获取公共服务（如天气预报）、查询电子地图、手机阅读等多种功能。手机二维码是3G时代网络浏览、应用下载、网上购物、网上支付等服务的重要入口。<br>
+             &nbsp;&nbsp;&nbsp;&nbsp;手机二维码扫描软件：比较知名的应用有条码扫描器、快拍、酷拍、我查查等。彩色二维码生成器,二维码生成器。<br>
+             <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_wealink" data-cmd="wealink" title="分享到若邻网"></a><a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a><a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a><a href="#" class="bds_tsohu" data-cmd="tsohu" title="分享到搜狐微博"></a><a href="#" class="bds_thx" data-cmd="thx" title="分享到和讯微博"></a><a href="#" class="bds_mogujie" data-cmd="mogujie" title="分享到蘑菇街"></a><a href="#" class="bds_huaban" data-cmd="huaban" title="分享到花瓣"></a><a href="#" class="bds_meilishuo" data-cmd="meilishuo" title="分享到美丽说"></a><a href="#" class="bds_kaixin001" data-cmd="kaixin001" title="分享到开心网"></a><a href="#" class="bds_tqf" data-cmd="tqf" title="分享到腾讯朋友"></a><a href="#" class="bds_duitang" data-cmd="duitang" title="分享到堆糖"></a><a href="#" class="bds_diandian" data-cmd="diandian" title="分享到点点网"></a><a href="#" class="bds_iguba" data-cmd="iguba" title="分享到股吧"></a><a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a><a href="#" class="bds_mshare" data-cmd="mshare" title="分享到一键分享"></a></div>
+             <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"32"},"share":{},"image":{"viewList":["qzone","tsina","tqq","renren","weixin","wealink","sqq","douban","tsohu","thx","mogujie","huaban","meilishuo","kaixin001","tqf","duitang","diandian","iguba","fbook","mshare"],"viewText":"分享到：","viewSize":"16"}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+         </div>
+     </div>
+ </DIV>
+ <SCRIPT type=text/javascript src="images/index.js"></SCRIPT>
+ <SCRIPT type=text/javascript src="images/public.js"></SCRIPT>
+        </div>
+    </div>
+
+</body>
+</html>

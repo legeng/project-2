@@ -1,0 +1,47 @@
+#wxeditortip{margin:20px 0}
+.wxeditor .left{position:relative;float:left;width:501px}
+.wxeditor .left .tabbox{float:left;width:100px}
+.wxeditor .left .tplcontent{float:left;width:376px}
+.wxeditor .right{float:left;margin-left:-20px;width:45%}
+#second{padding:20px 20px;width:440px;height:260px;border:1px solid #ccc;background:transparent;overflow-y:scroll}
+#bdeditor{width:100%;margin:0 auto}
+.wxeditor a:hover{color:#fff}
+.tabs{background-color:#028DB4;height:100%}
+.tabs li a{display:block;background-color:#028DB4;padding:20px 8px;border-right:1px solid #ccc;color:#fff;text-align:center;font-size:18px;}
+.tabs li.editorlogo a{display:block;padding:31px 8px;border-right:1px solid #ccc;color:#fff;text-align:center;font-size:16px;border-bottom:1px solid #ccc}
+.tabs li:hover a,.tabs li a.current{background-color:#424A4D;color:#fff}
+.tab_con{padding:45px 0;border:1px solid #ccc;border-left:0}
+.tab_con .content{height:408px;overflow-y:scroll}
+.tab_con .content li{margin:20px auto;cursor:pointer;margin-bottom:15px;width:310px}
+.tab_con .content li:hover .itembox{padding:10px;border:1px solid #028DB4}
+.tab_con .content li .itembox{width:310px;margin:0 auto}
+
+.goto,.toolboard{position:absolute;right:-48px;margin-top:45px;font-size:45px;font-weight:700}
+.copy-editor-html,.meitu,.gif,.indoorsteamtb,.fullshowbox,.fullhidebox,#phone,#kefu{float:left;margin:5px 12px;background-color:#424a4d;color:#fff;width:65px;height:65px;line-height:65px;font-size:20px;text-align:center;cursor:pointer;border-radius:50%}
+#phone{font-size:12px}
+#kefu a{color:#fff}
+.toolboard h2{font-weight:400}
+.toolboard .copywx,.toolboard .saveit,.toolboard .syncwx{margin-top:8px;width:180px;letter-spacing:5px;font-size:14px;font-weight:700;cursor:pointer}.toolboard{width:200px;padding:8px;right:12px;top:0;color:#000;font-size:12px;font-weight:400;border:1px solid #fff}
+
+.colorbox{position:absolute;right:-38px;top:30%;font-size:35px;font-weight:700;width:28px;height:28px;background-color:red;z-index:9999}
+#colorpickerbox{padding:10px 0;border:1px solid #ccc;border-bottom:0;border-left:0}
+#colorpickerbox .colorpicker{background-image:url(../images/colorpicker/custom_background.png);position:absolute;bottom:0;left:0}
+#colorpickerbox .colorpicker_hue div{background-image:url(../images/colorpicker/custom_indic.gif)}
+#colorpickerbox .colorpicker_hex{background-image:url(../images/colorpicker/custom_hex.png)}
+#colorpickerbox .colorpicker_rgb_r{background-image:url(../images/colorpicker/custom_rgb_r.png)}
+#colorpickerbox .colorpicker_rgb_g{background-image:url(../images/colorpicker/custom_rgb_g.png)}
+#colorpickerbox .colorpicker_rgb_b{background-image:url(../images/colorpicker/custom_rgb_b.png)}
+#colorpickerbox .colorpicker_hsb_s{background-image:url(../images/colorpicker/custom_hsb_s.png)}
+#colorpickerbox .colorpicker_hsb_h{background-image:url(../images/colorpicker/custom_hsb_h.png)}
+#colorpickerbox .colorpicker_hsb_b{background-image:url(../images/colorpicker/custom_rgb_b.png)}
+#colorpickerbox .colorpicker_submit{background-image:url(../images/colorpicker/custom_submit.png)}
+#colorpickerbox .colorpicker input{color:#778398}
+#customWidget{position:relative;height:36px}
+#previewbox{z-index:99999;display:none;position:fixed;left:125px;top:0;width:296px;height:630px;background:url(../images/colorpicker/jizzyoujizz_com.png);margin:0px 650px;background-size:contain;padding:120px 25px 116px 36px}
+.fenxiang{position:absolute;left:502px;top:2px;width:100px}
+#share_box{width:100px}
+#share_box .bds{display:inline-block}
+#bg-choose .default,#bg-choose .chooser{width:40px;height:40px;margin:10px;cursor:pointer;border-radius:5px;}
+img {
+	max-width: 100%;overflow:hidden;
+}

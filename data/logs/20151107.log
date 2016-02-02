@@ -1,0 +1,55 @@
+2015-11-07 09:25:29 trace :
+------------
+Array:
+from : oKMr3sh2TnN97E4EqSoY8scrXR-g ;
+to : gh_3496a9c1c454 ;
+time : 1446859574 ;
+type : text ;
+event :  ;
+tousername : gh_3496a9c1c454 ;
+fromusername : oKMr3sh2TnN97E4EqSoY8scrXR-g ;
+createtime : 1446859574 ;
+msgtype : text ;
+content : 遵义天气 ;
+msgid : 6214214552637147363 ;
+redirection :  ;
+source :  ;
+
+2015-11-07 09:25:29 params :
+------------
+Array:
+message : Array ;
+module : userapi ;
+rule : 1 ;
+priority : 255 ;
+keyword : Array ;
+
+2015-11-07 09:25:29 response :
+------------
+Array:
+FromUserName : gh_3496a9c1c454 ;
+ToUserName : oKMr3sh2TnN97E4EqSoY8scrXR-g ;
+MsgType : text ;
+Content : 遵义今日天气
+今天白天多云，26摄氏度。
+南风，≤3
+今天夜间小雨，16摄氏度。
+南风，≤3
+==================
+【穿衣指数】：单层薄衫、裤薄型棉衫、长裤、针织长袖衫、长袖T恤。薄型套装、牛仔衫裤、西服套装、薄型夹克
+
+【感冒指数】：低发期天气舒适，不易发生感冒；
+
+【空调指数】：不需要开启空调
+
+【污染物扩散条件】：
+
+【洗车指数】：暂无暂无
+
+【运动指数】：暂无暂无
+
+【紫外线指数】：
+
+【体感度指数】：
+ ;
+

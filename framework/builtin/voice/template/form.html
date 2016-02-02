@@ -1,0 +1,26 @@
+<div class="panel panel-default">
+	<div class="panel-heading">
+		回复内容
+	</div>
+	<ul class="list-group">
+		<li class="list-group-item" id="append-list">
+			<div class="form-group">
+				<label class="col-xs-12 col-sm-3 col-md-2 control-label">语音标题</label>
+				<div class="col-sm-9 col-xs-12">
+					<input type="text" class="form-control" placeholder="添加语音消息的标题" name="title" value="{$replies['title']}" />
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-xs-12 col-sm-3 col-md-2 control-label">上传语音</label>
+				<div class="col-sm-9 col-xs-12">
+					{php echo tpl_form_field_audio('mediaid', $replies['mediaid'], array('tabs'=>array('remote'=>'active')));}
+					<span class="help-block">请上传触发关键字时所要回复的语音，上传语音必须是MP3类型</span>
+					{if (!empty($rid)) && (time() - $replies['createtime'] > 259200) }
+						<div class="alert alert-danger" role="alert">该回复已过期 [有效期为3天]，请及时上传新的回复语音。</div>
+					{/if}
+				</div>
+			</div>
+		</li>
+	</ul>
+</div>
+

@@ -1,0 +1,306 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{$_W['config']['siteinfo']['title']}</title>
+<meta name="keywords" content="{$_W['config']['siteinfo']['keywords']}" />
+<meta name="description" content="{$_W['config']['siteinfo']['description']}" />
+<link href="./resource/css/base.css" rel="stylesheet" type="text/css" />
+<link rel="shortcut icon" type="image/x-icon" href="./resource/images/favicon.ico" />
+</head>
+<body>
+{template 'common/header'}
+{template 'common/header-gw'}
+<div class="iiin-body">
+    <div class="iiin-box">
+        <div class="wxpoe wr">
+            <h3>生活微信公众账号</h3>
+            <dl class="channel">
+                <dd><a href="{php echo url('public/category',array('key'=>'生活'));}" target="_blank">更多</a></dd>
+            </dl>
+            <div class="content">
+                <div class="wxpoe-class">
+                    <ul>
+                        {loop $list[0] $one}
+                        <li><a href="{php echo url('public/category',array('id'=>$one['uniacid'],'key'=>$one['industry_parent']))}" target="_blank" title="{$name}"><img src="{$attachurl}{$one['uniacid']}/headimg_{$one[uniacid]}.jpg?acid={$one[uniacid]}" alt="{$one['name']}" title="{$one['name']}"/><p>{$one['name']}</p></a></li>
+                        {/loop}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="wxpoe">
+            <h3>美食微信公众账号</h3>
+            <dl class="channel">
+                <dd><a href="{php echo url('public/category',array('key'=>'美食'));}" target="_blank">更多</a></dd>
+            </dl>
+            <div class="content">
+                <div class="wxpoe-class">
+                    <ul>
+                        {loop $list[1] $one}
+                        <li><a href="{php echo url('public/category',array('id'=>$one['uniacid'],'key'=>$one['industry_parent']))}" target="_blank" title="{$name}"><img src="{$attachurl}{$one['uniacid']}/headimg_{$one[uniacid]}.jpg?acid={$one[uniacid]}" alt="{$one['name']}" title="{$one['name']}"/><p>{$one['name']}</p></a></li>
+                        {/loop}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="wxpoe wr">
+            <h3>娱乐微信公众账号</h3>
+            <dl class="channel">
+                <dd><a href="{php echo url('public/category',array('key'=>'娱乐'));}" target="_blank">更多</a></dd>
+            </dl>
+            <div class="content">
+                <div class="wxpoe-class">
+                    <ul>
+                        {loop $list[2] $one}
+                        <li><a href="{php echo url('public/category',array('id'=>$one['uniacid'],'key'=>$one['industry_parent']))}" target="_blank" title="{$name}"><img src="{$attachurl}{$one['uniacid']}/headimg_{$one[uniacid]}.jpg?acid={$one[uniacid]}" alt="{$one['name']}" title="{$one['name']}"/><p>{$one['name']}</p></a></li>
+                        {/loop}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="wxpoe">
+            <h3>购物微信公众账号</h3>
+            <dl class="channel">
+                <dd><a href="{php echo url('public/category',array('key'=>'购物'));}" target="_blank">更多</a></dd>
+            </dl>
+            <div class="content">
+                <div class="wxpoe-class">
+                    <ul>
+                        {loop $list[3] $one}
+                        <li><a href="{php echo url('public/category',array('id'=>$one['uniacid'],'key'=>$one['industry_parent']))}" target="_blank" title="{$name}"><img src="{$attachurl}{$one['uniacid']}/headimg_{$one[uniacid]}.jpg?acid={$one[uniacid]}" alt="{$one['name']}" title="{$one['name']}"/><p>{$one['name']}</p></a></li>
+                        {/loop}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--<div class="idaloo">
+            <div class="idal"> </div>
+            <div class="idar"></div>
+        </div>-->
+        <div class="wxpoe wr">
+            <h3>丽人微信公众账号</h3>
+            <dl class="channel">
+                <dd><a href="{php echo url('public/category',array('key'=>'丽人'));}" target="_blank">更多</a></dd>
+            </dl>
+            <div class="content">
+                <div class="wxpoe-class">
+                    <ul>
+                        {loop $list[4] $one}
+                        <li><a href="{php echo url('public/category',array('id'=>$one['uniacid'],'key'=>$one['industry_parent']))}" target="_blank" title="{$name}"><img src="{$attachurl}{$one['uniacid']}/headimg_{$one[uniacid]}.jpg?acid={$one[uniacid]}" alt="{$one['name']}" title="{$one['name']}"/><p>{$one['name']}</p></a></li>
+                        {/loop}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="wxpoe">
+            <h3>结婚微信公众账号</h3>
+            <dl class="channel">
+                <dd><a href="{php echo url('public/category',array('key'=>'结婚'));}" target="_blank">更多</a></dd>
+            </dl>
+            <div class="content">
+                <div class="wxpoe-class">
+                    <ul>
+                        {loop $list[5] $one}
+                        <li><a href="{php echo url('public/category',array('id'=>$one['uniacid'],'key'=>$one['industry_parent']))}" target="_blank" title="{$name}"><img src="{$attachurl}{$one['uniacid']}/headimg_{$one[uniacid]}.jpg?acid={$one[uniacid]}" alt="{$one['name']}" title="{$one['name']}"/><p>{$one['name']}</p></a></li>
+                        {/loop}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="wxpoe wr">
+            <h3>亲子微信公众账号</h3>
+            <dl class="channel">
+                <dd><a href="{php echo url('public/category',array('key'=>'亲子'));}" target="_blank">更多</a></dd>
+            </dl>
+            <div class="content">
+                <div class="wxpoe-class">
+                    <ul>
+                        {loop $list[6] $one}
+                        <li><a href="{php echo url('public/category',array('id'=>$one['uniacid'],'key'=>$one['industry_parent']))}" target="_blank" title="{$name}"><img src="{$attachurl}{$one['uniacid']}/headimg_{$one[uniacid]}.jpg?acid={$one[uniacid]}" alt="{$one['name']}" title="{$one['name']}"/><p>{$one['name']}</p></a></li>
+                        {/loop}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="wxpoe">
+            <h3>运动微信公众账号</h3>
+            <dl class="channel">
+                <dd><a href="{php echo url('public/category',array('key'=>'运动'));}" target="_blank">更多</a></dd>
+            </dl>
+            <div class="content">
+                <div class="wxpoe-class">
+                    <ul>
+                        {loop $list[7] $one}
+                        <li><a href="{php echo url('public/category',array('id'=>$one['uniacid'],'key'=>$one['industry_parent']))}" target="_blank" title="{$name}"><img src="{$attachurl}{$one['uniacid']}/headimg_{$one[uniacid]}.jpg?acid={$one[uniacid]}" alt="{$one['name']}" title="{$one['name']}"/><p>{$one['name']}</p></a></li>
+                        {/loop}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="wxpoe wr">
+            <h3>酒店微信公众账号</h3>
+            <dl class="channel">
+                <dd><a href="{php echo url('public/category',array('key'=>'酒店'));}" target="_blank">更多</a></dd>
+            </dl>
+            <div class="content">
+                <div class="wxpoe-class">
+                    <ul>
+                        {loop $list[8] $one}
+                        <li><a href="{php echo url('public/category',array('id'=>$one['uniacid'],'key'=>$one['industry_parent']))}" target="_blank" title="{$name}"><img src="{$attachurl}{$one['uniacid']}/headimg_{$one[uniacid]}.jpg?acid={$one[uniacid]}" alt="{$one['name']}" title="{$one['name']}"/><p>{$one['name']}</p></a></li>
+                        {/loop}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="wxpoe">
+            <h3>汽车微信公众账号</h3>
+            <dl class="channel">
+                <dd><a href="{php echo url('public/category',array('key'=>'汽车'));}" target="_blank">更多</a></dd>
+            </dl>
+            <div class="content">
+                <div class="wxpoe-class">
+                    <ul>
+                        {loop $list[9] $one}
+                        <li><a href="{php echo url('public/category',array('id'=>$one['uniacid'],'key'=>$one['industry_parent']))}" target="_blank" title="{$name}"><img src="{$attachurl}{$one['uniacid']}/headimg_{$one[uniacid]}.jpg?acid={$one[uniacid]}" alt="{$one['name']}" title="{$one['name']}"/><p>{$one['name']}</p></a></li>
+                        {/loop}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--<div class="idaloo">
+            <div class="idal"> </div>
+            <div class="idar"></div>
+        </div>-->
+        <div class="wxpoe wr">
+            <h3>工作微信公众账号</h3>
+            <dl class="channel">
+                <dd><a href="{php echo url('public/category',array('key'=>'工作'));}" target="_blank">更多</a></dd>
+            </dl>
+            <div class="content">
+                <div class="wxpoe-class">
+                    <ul>
+                        {loop $list[10] $one}
+                        <li><a href="{php echo url('public/category',array('id'=>$one['uniacid'],'key'=>$one['industry_parent']))}" target="_blank" title="{$name}"><img src="{$attachurl}{$one['uniacid']}/headimg_{$one[uniacid]}.jpg?acid={$one[uniacid]}" alt="{$one['name']}" title="{$one['name']}"/><p>{$one['name']}</p></a></li>
+                        {/loop}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="wxpoe">
+            <h3>房产微信公众账号</h3>
+            <dl class="channel">
+                <dd><a href="{php echo url('public/category',array('key'=>'房产'));}" target="_blank">更多</a></dd>
+            </dl>
+            <div class="content">
+                <div class="wxpoe-class">
+                    <ul>
+                        {loop $list[11] $one}
+                        <li><a href="{php echo url('public/category',array('id'=>$one['uniacid'],'key'=>$one['industry_parent']))}" target="_blank" title="{$name}"><img src="{$attachurl}{$one['uniacid']}/headimg_{$one[uniacid]}.jpg?acid={$one[uniacid]}" alt="{$one['name']}" title="{$one['name']}"/><p>{$one['name']}</p></a></li>
+                        {/loop}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="wxpoe wr">
+            <h3>教育微信公众账号</h3>
+            <dl class="channel">
+                <dd><a href="{php echo url('public/category',array('key'=>'教育'));}" target="_blank">更多</a></dd>
+            </dl>
+            <div class="content">
+                <div class="wxpoe-class">
+                    <ul>
+                        {loop $list[12] $one}
+                        <li><a href="{php echo url('public/category',array('id'=>$one['uniacid'],'key'=>$one['industry_parent']))}" target="_blank" title="{$name}"><img src="{$attachurl}{$one['uniacid']}/headimg_{$one[uniacid]}.jpg?acid={$one[uniacid]}" alt="{$one['name']}" title="{$one['name']}"/><p>{$one['name']}</p></a></li>
+                        {/loop}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="wxpoe">
+            <h3>政务微信公众账号</h3>
+            <dl class="channel">
+                <dd><a href="{php echo url('public/category',array('key'=>'政务'));}" target="_blank">更多</a></dd>
+            </dl>
+            <div class="content">
+                <div class="wxpoe-class">
+                    <ul>
+                        {loop $list[13] $one}
+                        <li><a href="{php echo url('public/category',array('id'=>$one['uniacid'],'key'=>$one['industry_parent']))}" target="_blank" title="{$name}"><img src="{$attachurl}{$one['uniacid']}/headimg_{$one[uniacid]}.jpg?acid={$one[uniacid]}" alt="{$one['name']}" title="{$one['name']}"/><p>{$one['name']}</p></a></li>
+                        {/loop}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="wxpoe wr">
+            <h3>新闻微信公众账号</h3>
+            <dl class="channel">
+                <dd><a href="{php echo url('public/category',array('key'=>'新闻'));}" target="_blank">更多</a></dd>
+            </dl>
+            <div class="content">
+                <div class="wxpoe-class">
+                    <ul>
+                        {loop $list[14] $one}
+                        <li><a href="{php echo url('public/category',array('id'=>$one['uniacid'],'key'=>$one['industry_parent']))}" target="_blank" title="{$name}"><img src="{$attachurl}{$one['uniacid']}/headimg_{$one[uniacid]}.jpg?acid={$one[uniacid]}" alt="{$one['name']}" title="{$one['name']}"/><p>{$one['name']}</p></a></li>
+                        {/loop}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="wxpoe">
+            <h3>财经微信公众账号</h3>
+            <dl class="channel">
+                <dd><a href="{php echo url('public/category',array('key'=>'财经'));}" target="_blank">更多</a></dd>
+            </dl>
+            <div class="content">
+                <div class="wxpoe-class">
+                    <ul>
+                        {loop $list[15] $one}
+                        <li><a href="{php echo url('public/category',array('id'=>$one['uniacid'],'key'=>$one['industry_parent']))}" target="_blank" title="{$name}"><img src="{$attachurl}{$one['uniacid']}/headimg_{$one[uniacid]}.jpg?acid={$one[uniacid]}" alt="{$one['name']}" title="{$one['name']}"/><p>{$one['name']}</p></a></li>
+                        {/loop}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="wxpoe wr">
+            <h3>公司微信公众账号</h3>
+            <dl class="channel">
+                <dd><a href="{php echo url('public/category',array('key'=>'公司'));}" target="_blank">更多</a></dd>
+            </dl>
+            <div class="content">
+                <div class="wxpoe-class">
+                    <ul>
+                        {loop $list[16] $one}
+                        <li><a href="{php echo url('public/category',array('id'=>$one['uniacid'],'key'=>$one['industry_parent']))}" target="_blank" title="{$name}"><img src="{$attachurl}{$one['uniacid']}/headimg_{$one[uniacid]}.jpg?acid={$one[uniacid]}" alt="{$one['name']}" title="{$one['name']}"/><p>{$one['name']}</p></a></li>
+                        {/loop}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="wxpoe">
+            <h3>医院微信公众账号</h3>
+            <dl class="channel">
+                <dd><a href="{php echo url('public/category',array('key'=>'医院'));}" target="_blank">更多</a></dd>
+            </dl>
+            <div class="content">
+                <div class="wxpoe-class">
+                    <ul>
+                        {loop $list[17] $one}
+                        <li><a href="{php echo url('public/category',array('id'=>$one['uniacid'],'key'=>$one['industry_parent']))}" target="_blank" title="{$name}"><img src="{$attachurl}{$one['uniacid']}/headimg_{$one[uniacid]}.jpg?acid={$one[uniacid]}" alt="{$one['name']}" title="{$one['name']}"/><p>{$one['name']}</p></a></li>
+                        {/loop}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--baidu button begin-->
+<script type="text/javascript" id="bdshare_js" data="type=slide&amp;img=1&amp;pos=right&amp;uid=742298" ></script>
+<script type="text/javascript" id="bdshell_js"></script>
+<script type="text/javascript">
+    document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000);
+</script>
+<!--baidu button end-->
+<script src="./resource/js/lib/jquery-1.11.1.min.js"></script><script src="./resource/js/scrolltopcontrol.js"></script>
+{template 'common/footer'}
+</body>
+</html>

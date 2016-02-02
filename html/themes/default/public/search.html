@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>{$_W['config']['siteinfo']['title']}</title>
+        <meta name="keywords" content="{$_W['config']['siteinfo']['keywords']}" />
+        <meta name="description" content="{$_W['config']['siteinfo']['description']}" />
+        <link href="./resource/css/base.css" rel="stylesheet" type="text/css" />
+        <link rel="shortcut icon" type="image/x-icon" href="./resource/images/favicon.ico" />
+    </head>
+    <body>
+        {template 'common/header'}
+        {template 'common/header-gw'}
+        <div class="iiin-body">
+            <div class="iiin-box">
+                <div class="iasil" style="width:1020px;">
+                    <div class="iucon">
+                        <div class="content">
+                            <div class="somim" style="width:97%">
+                                <h4>系统搜索到约有<strong> {$total} </strong>项符合<strong style="color:#82B440"> "{$keyword}" </strong>的查询结果</h4>
+                            </div>
+                            <div class="iweilist" style="width:665px; float:left; margin-left:15px;">
+                                <ul>
+                                    {loop $list $one}
+                                    <li><span class="lo"><a href="{php echo url('public/category',array('id'=>$one['uniacid'],'key'=>$one['industry_parent']))}" target="_blank"><img src="{$one['attachurl']}{$one['uniacid']}/headimg_{$one[uniacid]}.jpg?acid={$one[uniacid]}" width="90" height="90" alt="微信公众号：{$one['name']}"/></a></span><span class="te"><strong><a href="{php echo url('public/category',array('id'=>$one['uniacid'],'key'=>$one['industry_parent']))}" target="_blank">{$one['name']}</a></strong><p class="ewm" style="width:0px; right:-10px;"><a href="{php echo url('public/category',array('id'=>$one['uniacid'],'key'=>$one['industry_parent']))}" target="_blank"><img src="{$one['attachurl']}{$one['uniacid']}/qrcode_{$one[uniacid]}.jpg?acid={$one[uniacid]}" alt="查看二维码" width="120" height="120" style="border: 2px #E3E3E3 solid;" /></a></p><p class="wc1">微信号：{$one['details'][$one['uniacid']]['account']}</p><p><font class="wc2">功能介绍：</font>{$one['description']}</p><p> <a href="{php echo url('public/category',array('id'=>$one['uniacid'],'key'=>$one['industry_parent']))}" target="_blank"><img src="./resource/images/guanzhu.gif" /></a><div class="bdsharebuttonbox" style="margin-top:-40px;float:right;"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone"></a><a href="#" class="bds_tsina" data-cmd="tsina"></a><a href="#" class="bds_tqq" data-cmd="tqq"></a><a href="#" class="bds_renren" data-cmd="renren"></a><a href="#" class="bds_weixin" data-cmd="weixin"></a></div></p></span></li>
+                                    {/loop}
+                                </ul>
+                            </div>
+                            <div class="bdpage">{$pager}</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="iasir">
+                    <div class="iidads160">
+                    </div>
+                    <div class="iidads160">
+                    </div>
+                </div>
+            </div>
+        </div>
+        {template 'common/footer'}
+        <script src="./resource/js/lib/jquery-1.11.1.min.js"></script><script src="./resource/js/scrolltopcontrol.js"></script>
+        <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdPic":"","bdStyle":"0","bdSize":"16"},"share":{},"image":{"viewList":["qzone","tsina","tqq","renren","weixin"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+    </body>
+</html>
